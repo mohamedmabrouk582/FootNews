@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="artVm"
+            type="com.example.moham.footnews.viewModels.articles.ArticleViewModel"/>
+    </data>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        setQueryTextListener="@{artVm.listener}"
+        app:queryHint="@{artVm.mQuery}"
+        />
+
+     <android.support.v7.widget.RecyclerView
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:id="@+id/article_recycler_view"
+             />
+</LinearLayout>
+</layout>

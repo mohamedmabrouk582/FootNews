@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FootNews</string>
+    <string name="socketTimeout">socketTimeout</string>
+    <string name="jsonError">jsonError</string>
+    <string name="connectionError">connectionError</string>
+    <string name="serverError">serverError</string>
+</resources>
